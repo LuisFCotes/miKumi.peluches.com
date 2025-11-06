@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KumI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Spartan:wght@400&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body >
+    <div class="logo"href id="Inicio">
+         <img src="./imagenes/Captura-removebg-preview.png" width="100"/>
+        </div>
+  <div class="menu">
+  <a href="#Inicio">Inicio</a>
+  <a href="#productos">Productos</a>
+  <a href="https://wa.me/573025368565">Contactanos</a>
+    <a href="#" id="btn-terminos">Términos y Condiciones</a>
+</div>
+ <div class="busqueda">
+      <input type="text" id="buscar" placeholder="Buscar..." />
+      <button id="btnBuscar">🔍</button>
+    </div>
+  </div>
+  <p id="resultado" class="mensaje"></p>
+</div>
+</div>
+<div id="scroll-navbar">
+  <div class="scroll-menu">
+    <a href="#Inicio">Inicio</a>
+    <a href="producto.html">Productos</a>
+     <a href="https://wa.me/573025368565">Contactanos</a>
+   
+
+    <div class="busqueda1">
+      <input type="text" id="buscar1" placeholder="Buscar..." />
+      <button id="btnBuscar1">🔍</button>
+    </div>
+  </div>
+  <p id="resultado1" class="mensaje"></p>
+</div>
+<a href="https://wa.me/573025368565" target="_blank" class="btn-whatsapp">
+  <img src="./imagenes/whassp.png" alt="WhatsApp" width="60">
+</a>
+    <div>
+        <video src="./videos/Diseño sin título.mp4" width="1352" autoplay muted loop playsinline></video>
+    </div>
+    <section class="bienvenida">
+         <h2>Te damos la bienvenida a nuestra página de amor y abrazos</h2>
+  <p>
+    Estamos dedicados a llenar el mundo de ternura con peluches únicos, diseñados
+    para regalar amor, compañía y abrazos en cualquier momento de la vida.
+  </p>
+    </section>
+   <section class="productos"id="productos">
+  <h2>Nuevos Productos</h2>
+  <div class="contenedor-productos">
+
+    <div class="card">
+      <img src="imagenes/1.png" alt="Oso De Miel Love">
+      <div class="info">
+        <h3>Oso De Miel Love</h3>
+        <p class="precio">$190.000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="imagenes/2.png" alt="Capibara Escolar">
+      <div class="info">
+        <h3>Capibara Escolar</h3>
+        <p class="precio">$75.000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="imagenes/3.png" alt="Sullivan Peluche">
+      <div class="info">
+        <h3>Sullivan Peluche</h3>
+        <p class="precio">$200.000</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="imagenes/4.png" alt="Minnie Mouse">
+      <div class="info">
+        <h3>Minnie Mouse</h3>
+        <p class="precio">$170.000</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="ver-mas">
+  <button> <a href="producto.html">Ver más</a></button>
+
+</div>
+<style>
+.producto img, 
+.card img, 
+.item img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(30%) brightness(0.9);
+  transition: filter 0.4s ease, transform 0.3s ease;
+}
+
+.producto:hover img,
+.card:hover img,
+.item:hover img {
+  filter: grayscale(0%) brightness(1.1) saturate(1.6);
+  transform: scale(1.05);
+}
+</style>
+<div class="promo">
+ <img src="imagenes/ososososo.png"  >
+</div>
+ <div class="botonk">
+  <button class="imgButton"> <img src="imagenes/botonnn.png" ></button>
+</div>
+
+<div class="contenido">
+  <div class="texto">
+    <h2>Un detalle lleno de amor</h2>
+     <p>Cada uno de nuestros peluches está hecho con amor y diseñado para llenar de ternura cada rincón. Desde los más pequeñitos hasta los más grandes, todos tienen una misión: regalar sonrisas y acompañarte en cada momento especial.</p>
+    <p>Ya sea para ti o para alguien que amas, en Kumi encontrarás ese peluche perfecto que transmite calidez, suavidad y alegría.</p>
+  </div>
+
+  <div class="stich">
+    <img src="imagenes/stich22.png" alt="Stich" class="miImagen">
+  </div>
+</div>
+
+<div class="final">
+  <img src="imagenes/ultimo2.png" alt="Fondo final" class="fondoFinal">
+</div>
+
+       <script>
+window.addEventListener('scroll', function() {
+  const scrollNavbar = document.getElementById('scroll-navbar');
+
+  if (window.scrollY > 250) {
+    scrollNavbar.classList.add('active');
+  } else {
+    scrollNavbar.classList.remove('active');
+  }
+});
+</script>
+<script>
+
+const productos = [
+  { nombre: "peluches", imagenes: ["imagenes/1.png","imagenes/2.png","imagenes/3.png","imagenes/4.png"], descripcion: "Suave y adorable peluche para regalar." },
+  { nombre: "rosa", imagenes: ["imagenes/rosa.jpg"], descripcion: "Hermosa rosa roja para ocasiones especiales." },
+  { nombre: "corazón", imagenes: ["imagenes/corazon.jpg"], descripcion: "Figura decorativa con forma de corazón." },
+  { nombre: "oso", imagenes: ["imagenes/oso.jpg"], descripcion: "Oso de peluche gigante lleno de ternura." },
+  { nombre: "ramo", imagenes: ["imagenes/ramo.jpg"], descripcion: "Ramo de flores naturales y coloridas." },
+  { nombre: "abrazo", imagenes: ["imagenes/abrazo.jpg"], descripcion: "Caja sorpresa 'Abrazo en una caja'." },
+  { nombre: "flor", imagenes: ["imagenes/flor.jpg"], descripcion: "Flor decorativa preservada." }
+];
+
+
+function mostrarMensajePantalla(mensaje, color) {
+  const overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.top = "0";
+  overlay.style.left = "0";
+  overlay.style.width = "100%";
+  overlay.style.height = "100%";
+  overlay.style.background = "rgba(0,0,0,0.6)";
+  overlay.style.display = "flex";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.zIndex = "9999";
+
+  const caja = document.createElement("div");
+  caja.style.background = "white";
+  caja.style.padding = "30px 40px";
+  caja.style.borderRadius = "20px";
+  caja.style.boxShadow = "0 5px 15px rgba(0,0,0,0.3)";
+  caja.style.textAlign = "center";
+  caja.style.color = color;
+  caja.style.fontSize = "20px";
+  caja.style.fontWeight = "bold";
+  caja.style.maxWidth = "80%";
+  caja.innerHTML = mensaje + "<br><br>";
+
+  const btnCerrar = document.createElement("button");
+  btnCerrar.textContent = "Cerrar";
+  btnCerrar.style.padding = "10px 20px";
+  btnCerrar.style.border = "none";
+  btnCerrar.style.borderRadius = "10px";
+  btnCerrar.style.background = "#f7b5c0";
+  btnCerrar.style.cursor = "pointer";
+  btnCerrar.style.color = "#fff";
+  btnCerrar.style.fontWeight = "bold";
+  btnCerrar.addEventListener("click", () => document.body.removeChild(overlay));
+
+  caja.appendChild(btnCerrar);
+  overlay.appendChild(caja);
+  document.body.appendChild(overlay);
+}
+
+
+document.getElementById("btnBuscar").addEventListener("click", () => {
+  const texto = document.getElementById("buscar").value.toLowerCase().trim();
+
+  if (texto === "") {
+    mostrarMensajePantalla("Por favor escribe algo para buscar.", "#999");
+    return;
+  }
+
+  const encontrados = productos.filter(p => 
+    p.nombre.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+    .includes(texto.normalize('NFD').replace(/[\u0300-\u036f]/g, ""))
+  );
+
+  if (encontrados.length > 0) {
+    localStorage.setItem("resultadosBusqueda", JSON.stringify(encontrados));
+    window.location.href = "producto.html";
+     window.location.href = "producto.html";
+  } else {
+    mostrarMensajePantalla("Producto no encontrado.", "red");
+  }
+});
+</script>
+<script>
+function scrollAnimado(targetY, duration = 1000) {
+  const startY = window.scrollY;
+  const distance = targetY - startY;
+  const startTime = performance.now();
+
+  function animarScroll(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progreso = Math.min(elapsed / duration, 1);
+    const ease = 1 - Math.pow(1 - progreso, 3); 
+    window.scrollTo(0, startY + distance * ease);
+    if (elapsed < duration) requestAnimationFrame(animarScroll);
+  }
+
+  requestAnimationFrame(animarScroll);
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      const targetY = target.offsetTop - 50;
+      scrollAnimado(targetY, 1200); 
+    }
+  });
+});
+</script>
+<script>
+
+const productos1 = [
+  { nombre: "peluches", imagenes: ["imagenes/1.png","imagenes/2.png","imagenes/3.png","imagenes/4.png"], descripcion: "Suave y adorable peluche para regalar." },
+  { nombre: "rosa", imagenes: ["imagenes/rosa.jpg"], descripcion: "Hermosa rosa roja para ocasiones especiales." },
+  { nombre: "corazón", imagenes: ["imagenes/corazon.jpg"], descripcion: "Figura decorativa con forma de corazón." },
+  { nombre: "oso", imagenes: ["imagenes/oso.jpg"], descripcion: "Oso de peluche gigante lleno de ternura." },
+  { nombre: "ramo", imagenes: ["imagenes/ramo.jpg"], descripcion: "Ramo de flores naturales y coloridas." },
+  { nombre: "abrazo", imagenes: ["imagenes/abrazo.jpg"], descripcion: "Caja sorpresa 'Abrazo en una caja'." },
+  { nombre: "flor", imagenes: ["imagenes/flor.jpg"], descripcion: "Flor decorativa preservada." }
+];
+
+
+function mostrarMensajePantalla(mensaje, color) {
+  const overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.top = "0";
+  overlay.style.left = "0";
+  overlay.style.width = "100%";
+  overlay.style.height = "100%";
+  overlay.style.background = "rgba(0,0,0,0.6)";
+  overlay.style.display = "flex";
+  overlay.style.justifyContent = "center";
+  overlay.style.alignItems = "center";
+  overlay.style.zIndex = "9999";
+
+  const caja = document.createElement("div");
+  caja.style.background = "white";
+  caja.style.padding = "30px 40px";
+  caja.style.borderRadius = "20px";
+  caja.style.boxShadow = "0 5px 15px rgba(0,0,0,0.3)";
+  caja.style.textAlign = "center";
+  caja.style.color = color;
+  caja.style.fontSize = "20px";
+  caja.style.fontWeight = "bold";
+  caja.style.maxWidth = "80%";
+  caja.innerHTML = mensaje + "<br><br>";
+
+  const btnCerrar = document.createElement("button");
+  btnCerrar.textContent = "Cerrar";
+  btnCerrar.style.padding = "10px 20px";
+  btnCerrar.style.border = "none";
+  btnCerrar.style.borderRadius = "10px";
+  btnCerrar.style.background = "#f7b5c0";
+  btnCerrar.style.cursor = "pointer";
+  btnCerrar.style.color = "#fff";
+  btnCerrar.style.fontWeight = "bold";
+  btnCerrar.addEventListener("click", () => document.body.removeChild(overlay));
+
+  caja.appendChild(btnCerrar);
+  overlay.appendChild(caja);
+  document.body.appendChild(overlay);
+}
+
+
+document.getElementById("btnBuscar1").addEventListener("click", () => {
+  const texto = document.getElementById("buscar1").value.toLowerCase().trim();
+
+  if (texto === "") {
+    mostrarMensajePantalla("Por favor escribe algo para buscar.", "#999");
+    return;
+  }
+
+  const encontrados = productos.filter(p => 
+    p.nombre.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+    .includes(texto.normalize('NFD').replace(/[\u0300-\u036f]/g, ""))
+  );
+
+  if (encontrados.length > 0) {
+    localStorage.setItem("resultadosBusqueda1", JSON.stringify(encontrados));
+    window.location.href = "producto.html";
+  } else {
+    mostrarMensajePantalla("Producto no encontrado.", "red");
+  }
+});
+</script>
+<script>
+function scrollAnimado(targetY, duration = 1000) {
+  const startY = window.scrollY;
+  const distance = targetY - startY;
+  const startTime = performance.now();
+
+  function animarScroll(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progreso = Math.min(elapsed / duration, 1);
+    const ease = 1 - Math.pow(1 - progreso, 3); 
+    window.scrollTo(0, startY + distance * ease);
+    if (elapsed < duration) requestAnimationFrame(animarScroll);
+  }
+
+  requestAnimationFrame(animarScroll);
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      const targetY = target.offsetTop - 50;
+      scrollAnimado(targetY, 1200); 
+    }
+  });
+});
+</script>
+<div class="modal-contenido">
+  <span class="cerrar">&times;</span>
+  <h2>Términos y Condiciones</h2>
+  <p style="text-align: justify;">
+    Bienvenido(a) a <strong>Kumi</strong>, una tienda en línea dedicada a ofrecer los mejores peluches y productos de regalo. 
+    Al acceder o utilizar nuestro sitio web, usted acepta cumplir con los siguientes términos y condiciones. 
+    Por favor, léalos cuidadosamente antes de realizar una compra o registrarse en nuestra plataforma.
+  </p>
+
+  <h3>1. Propiedad del sitio</h3>
+  <p style="text-align: justify;">
+    Este sitio web y todo su contenido son propiedad de <strong>Kumi</strong>. 
+    Está prohibida su reproducción total o parcial sin autorización previa por escrito.
+  </p>
+
+  <h3>2. Uso del sitio</h3>
+  <p style="text-align: justify;">
+    Usted se compromete a hacer un uso adecuado y responsable del sitio web, evitando cualquier acción que pueda 
+    dañar, sobrecargar o interferir con su funcionamiento. Nos reservamos el derecho de suspender el acceso a cualquier 
+    usuario que incumpla estos términos.
+  </p>
+
+  <h3>3. Productos y precios</h3>
+  <p style="text-align: justify;">
+    Todos los productos y precios publicados están sujetos a disponibilidad y pueden variar sin previo aviso. 
+    Las imágenes son de referencia y pueden presentar ligeras diferencias con el producto real.
+  </p>
+
+  <h3>4. Pagos y envíos</h3>
+  <p style="text-align: justify;">
+    Los pagos se realizan a través de los medios habilitados en la página. 
+    Los tiempos de entrega pueden variar según la ubicación del cliente y la disponibilidad del producto. 
+    <strong>Kumi</strong> no se hace responsable por demoras atribuibles a empresas transportadoras externas.
+  </p>
+
+  <h3>5. Cambios y devoluciones</h3>
+  <p style="text-align: justify;">
+    Aceptamos devoluciones o cambios únicamente en caso de productos defectuosos o dañados, 
+    siempre que se reporte dentro de los tres (3) días hábiles posteriores a la recepción. 
+    Es indispensable conservar el comprobante de compra.
+  </p>
+
+  <h3>6. Privacidad y protección de datos</h3>
+  <p style="text-align: justify;">
+    La información personal proporcionada por nuestros clientes será tratada de forma confidencial 
+    y utilizada exclusivamente para fines comerciales y de contacto. 
+    Nos comprometemos a proteger sus datos de acuerdo con la legislación vigente.
+  </p>
+
+  <h3>7. Modificaciones</h3>
+  <p style="text-align: justify;">
+    <strong>Kumi</strong> se reserva el derecho de actualizar o modificar estos Términos y Condiciones en cualquier momento. 
+    Las versiones actualizadas serán publicadas en esta misma sección.
+  </p>
+
+  <h3>8. Contacto</h3>
+  <p style="text-align: justify;">
+    Si tiene dudas o comentarios acerca de estos términos, puede contactarnos a través de nuestro formulario en la sección 
+    <strong>“Contáctanos”</strong> o al correo electrónico <strong>mikumiya@kumi.com</strong>.
+  </p>
+
+  <br>
+  <p><em>Última actualización: Noviembre de 2025</em></p>
+</div>
+<script>
+  const btnTerminos = document.getElementById("btn-terminos");
+  const modal = document.querySelector(".modal-contenido");
+
+  
+  const fondo = document.createElement("div");
+  fondo.id = "fondo-difuminado";
+  document.body.appendChild(fondo);
+
+  const cerrar = modal.querySelector(".cerrar");
+
+  btnTerminos.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.classList.add("activo");
+    fondo.style.display = "block";
+  });
+
+  cerrar.addEventListener("click", () => {
+    modal.classList.remove("activo");
+    fondo.style.display = "none";
+  });
+
+  fondo.addEventListener("click", () => {
+    modal.classList.remove("activo");
+    fondo.style.display = "none";
+  });
+</script>
+</body>
+</html>

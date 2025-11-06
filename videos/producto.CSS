@@ -1,0 +1,16 @@
+.menu1 a{
+    text-decoration: none;
+    color: #686565;
+   font-weight: bold;
+   margin: 0%;
+       padding: 10px 0;
+           font-family: 'League Spartan', sans-serif;
+}
+.menu1{
+ display: flex;
+  justify-content: center; 
+  gap: 100px;     
+}
+.menu1 a:hover{
+    color: #F9B6C0;
+}
