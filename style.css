@@ -9,7 +9,7 @@ body{
   width: 100%;
 }
 
-/* ✅ CENTRAR VIDEO */
+
 video {
   display: block;
   width: 100%;
@@ -41,33 +41,40 @@ video {
 }
 .bienvenida {
   background-image: url('imagenes/bienvenida.png');
-  background-size: cover;
+  background-size: cover;          
   background-position: center bottom;
   background-repeat: no-repeat;
-  min-height: auto;
   font-family: 'League Spartan', sans-serif;
   text-align: center;
-  padding: 120px 20px 60px 20px;
+  padding: 70vh 5% 5vh 5%;         
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
+  display: block;
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+  
 }
 
-
-.bienvenida h2 {
+.bienvenida1 {
   color: #3b5724;       
   font-weight: 750;
-  font-size: 30px;
-  margin-bottom: 15px;
+  font-size: 2rem;                 
+  margin-bottom: 0.5rem;
+   position: relative;
+  top: -270px;
 }
 
-.bienvenida p {
+.bienvenida2 {
   color: #222;
-  font-size: 19px;
-  line-height: auto;
-  max-width: 900px;
+  font-size: 1.2rem;             
+  max-width: 90%;                 
   margin: 0 auto;
+  line-height: 1.4;     
+  position: relative;
+  top: -260px;
 }
+
 
 .productos {
   text-align: center;
@@ -272,7 +279,7 @@ text-decoration: none;
 }
 
 .busqueda1 input {
-  padding: 5px 10px;
+  padding: 5px 5px;
   border-radius: 8px;
   border: 1px solid #ccc;
   font-family: 'Spartan', sans-serif;
@@ -306,7 +313,7 @@ text-decoration: none;
 
 .promo img {
   position: relative;
-  left: 50%;
+  left: 51%;
   transform: translateX(-50%);
   width: 100%;
   max-width: 1200px;
@@ -404,10 +411,10 @@ text-decoration: none;
   filter: brightness(110%);
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 900px) {
   .contenido {
-    flex-direction: column;      /* Pasa a vertical en pantallas pequeñas */
+    flex-direction: column;    
     width: 90%;
     gap: 30px;
   }
@@ -647,98 +654,19 @@ text-decoration: none;
   -ms-overflow-style: none; 
 }
 
-/* ----------------------------------------
-   🔧 AJUSTES FINALES DE ESTABILIDAD GLOBAL
-   (no cambian tu estilo, solo corrigen el zoom)
----------------------------------------- */
-
-/* Evita que el contenido se mueva horizontalmente */
-html, body {
-  width: 100%;
-  height: auto;
-  overflow-x: hidden;
-  -webkit-text-size-adjust: 100%;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-/* Mantiene todas las imágenes, iframes y videos proporcionados */
-img, video, iframe {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-}
-
-/* Asegura que los contenedores se adapten fluidamente */
-section, div, main {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-/* Buscadores (que no se salgan ni se muevan al hacer zoom) */
-.search-box,
-.busqueda,
-.busqueda1 {
-  position: absolute !important;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-left: auto;
-  margin-right: clamp(10px, 3vw, 40px);
-  width: clamp(160px, 18vw, 260px);
-  flex-shrink: 0;
-  box-sizing: border-box;
-}
-
-.search-box input,
-.busqueda input,
-.busqueda1 input {
-  width: 100%;
-  box-sizing: border-box;
-  min-width: 0;
-}
-
-/* Responsividad y seguridad visual */
-@media (max-width: 900px) {
-  .menu, .menu1, .scroll-menu, .scroll-menu1 {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .texto {
-    margin: 20px;
-    max-width: 100%;
-  }
-  .stich .miImagen {
-    width: 90%;
-  }
-  .contenido {
-    padding: 30px 3%;
-  }
-}
-
-/* ----------------------------------------
-   🔒 CORRECCIÓN ESPECÍFICA PARA ZOOM
-   (Previene movimientos y desbordamientos)
----------------------------------------- */
-
-/* Contenedor principal estable */
-#root, 
-.wrapper, 
-.container, 
-main {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  position: relative;
+.video-container {
+  width: 100vw;       
+  max-width: none; 
   margin: 0 auto;
+  overflow: hidden;  
+  position: relative;
 }
 
-/* Todos los elementos de posición fija mantienen su lugar */
-[style*="position: fixed"],
-.fixed {
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  will-change: transform;
+.video-container video {
+  width: 100%;       
+  height: auto;       
+  display: block;
+  object-fit: cover;  
+  max-width: none;    
 }
+
